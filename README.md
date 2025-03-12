@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center"> <img width="30" alt="image" src="./assets/lae-dino.png"> EarthSynth：Generating Augmented Out-Of-Distribution Earth Observation with Diffusion Models</h1>
+<h1 align="center"> <img width="60" alt="image" src="./assets/EarthSy.png"> EarthSynth：Generating Augmented Out-Of-Distribution Earth Observation with Diffusion Models</h1>
 
 <h4 align="center"><em>Jiancheng Pan*,     Yanxing Liu*,     Yuqian Fu✉,     Muyuan Ma,</em></h4>
 
@@ -22,7 +22,6 @@
 <p align="center">
   <a href="#news">News</a> |
   <a href="#abstract">Abstract</a> |
-  <a href="#engine">Engine</a> |
   <a href="#dataset">Dataset</a> |
   <a href="#model">Model</a> |
   <a href="#statement">Statement</a>
@@ -35,17 +34,12 @@
 - [ ] Release LAE-DINO Model -->
 
 ## News
-- [2025/2/28] We have open sourced the <a href="#model">LAE-DINO Model </a>.
-- [2025/2/5] We have open sourced the <a href="#dataset">LAE-1M Dataset </a>.
-- [2025/2/5] The LAE-80C dataset, containing 80 classes, has been released as a new remote sensing OVD benchmark and can be quickly [downloaded](https://drive.google.com/drive/folders/1HPu97-f1SNF2sWm3Cdb2FHLRybdRbCtS?usp=sharing) here.
-- [2025/1/17] We have open sourced the code for <a href="#engine">LAE-Label Engine </a>.
-- [2024/12/10] Our paper of "Locate Anything on Earth: Advancing Open-Vocabulary Object Detection for Remote Sensing Community" is accepted [AAAI&#39;25](https://aaai.org/conference/aaai/aaai-25/), we will open source as soon as possible!
-- [2024/8/17] Our paper of "Locate Anything on Earth: Advancing Open-Vocabulary Object Detection for Remote Sensing Community" is up on [arXiv](http://arxiv.org/abs/2408.09110).
+- [2025/3/31] Our paper of "EarthSynth：Generating Augmented Out-Of-Distribution Earth Observation with Diffusion Models" is up on [arXiv](http://arxiv.org/abs/2408.09110).
 
 ## Abstract
 
 Object detection, particularly open-vocabulary object detection, plays a crucial role in Earth sciences, such as environmental monitoring, natural disaster assessment, and land-use planning. However, existing open-vocabulary detectors, primarily trained on natural-world images, struggle to generalize to remote sensing images due to a significant data domain gap. Thus, this paper aims to advance the development of open-vocabulary object detection in remote sensing community. To achieve this, we first reformulate the task as Locate Anything on Earth (LAE) with the goal of detecting any novel concepts on Earth. We then developed the LAE-Label Engine which collects, auto-annotates, and unifies up to 10 remote sensing datasets creating the LAE-1M - the first large-scale remote sensing object detection dataset with broad category coverage. Using the LAE-1M, we further propose and train the novel LAE-DINO Model, the first open-vocabulary foundation object detector for the LAE task, featuring Dynamic Vocabulary Construction (DVC) and Visual-Guided Text Prompt Learning (VisGT) modules. DVC dynamically constructs vocabulary for each training batch, while VisGT maps visual features to semantic space, enhancing text features. We comprehensively conduct experiments on established remote sensing benchmark DIOR, DOTAv2.0, as well as our newly introduced 80-class LAE-80C benchmark. Results demonstrate the advantages of the LAE-1M dataset and the effectiveness of the LAE-DINO method.
 
 <p align="center">
-    <img src="assets/lae.png" alt="Image" width="500">
+    <img src="assets/EarthSynth-Fig1.png" alt="Image" width="500">
 </p>
