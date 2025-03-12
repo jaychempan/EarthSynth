@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center"> <img width="30" alt="image" src="./assets/EarthSy.png"> EarthSynth：Generating Augmented Out-Of-Distribution Earth Observation with Diffusion Models</h1>
+<h1 align="center"> <img width="50" alt="image" src="./assets/EarthSy.png"> EarthSynth：Generating Augmented Out-Of-Distribution Earth Observation with Diffusion Models</h1>
 
 <h4 align="center"><em>Jiancheng Pan*,     Yanxing Liu*,     Yuqian Fu✉,     Muyuan Ma,</em></h4>
 
