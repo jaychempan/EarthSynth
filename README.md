@@ -1,22 +1,22 @@
 <div align="center">
 <h1 align="center"> <img width="50" alt="image" src="./assets/EarthSy.png"> EarthSynth: Generating Informative Earth Observation with Diffusion Models</h1>
 
-<h4 align="center"><em>Jiancheng Pan*,     Yanxing Liu*,     Yuqian Fu✉,     Muyuan Ma,</em></h4>
+<!-- <h4 align="center"><em>Jiancheng Pan*,     Yanxing Liu*,     Yuqian Fu✉,     Muyuan Ma,</em></h4>
 
-<h4 align="center"><em>Jiahao Li,     Danda Pani Paudel,    Luc Van Gool,     Xiaomeng Huang✉ </em></h4>
-<p align="center">
+<h4 align="center"><em>Jiahao Li,     Danda Pani Paudel,    Luc Van Gool,     Xiaomeng Huang✉ </em></h4> -->
+<!-- <p align="center">
     <img src="assets/inst.png" alt="Image" width="400">
-</p>
+</p> -->
 
-\* *Equal Contribution* &nbsp; &nbsp; Corresponding Author ✉
+<!-- \* *Equal Contribution* &nbsp; &nbsp; Corresponding Author ✉ -->
 
 </div>
 
 <p align="center">
     <a href="http://arxiv.org/abs/2408.09110"><img src="https://img.shields.io/badge/Arxiv-2408.09110-b31b1b.svg?logo=arXiv"></a>
-    <a href="http://arxiv.org/abs/2408.09110"><img src="https://img.shields.io/badge/AAAI'25-Paper-blue"></a>
-    <a href="https://jianchengpan.space/LAE-website/index.html"><img src="https://img.shields.io/badge/LAE-Project_Page-<color>"></a>
-    <a href="https://github.com/jaychempan/LAE-DINO/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow"></a>
+    <!-- <a href="http://arxiv.org/abs/2408.09110"><img src="https://img.shields.io/badge/AAAI'25-Paper-blue"></a> -->
+    <a href="https://jianchengpan.space/EarthSynth-website/index.html"><img src="https://img.shields.io/badge/EarthSynth-Project_Page-<color>"></a>
+    <a href="https://github.com/jaychempan/EarthSynth/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow"></a>
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@
 - [ ] Release LAE-DINO Model -->
 
 ## News
-- [2025/3/31] Our paper of "EarthSynth：EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](http://arxiv.org/abs/2408.09110).
+- [2025/5/6] Our paper of "EarthSynth：EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](http://arxiv.org/abs/2408.09110).
 
 ## Abstract
 
