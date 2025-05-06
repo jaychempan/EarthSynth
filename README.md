@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center"> <img width="50" alt="image" src="./assets/EarthSy.png"> EarthSynth：Generating Augmented Out-Of-Distribution Earth Observation with Diffusion Models</h1>
+<h1 align="center"> <img width="50" alt="image" src="./assets/EarthSy.png"> EarthSynth: Generating Informative Earth Observation with Diffusion Models</h1>
 
 <h4 align="center"><em>Jiancheng Pan*,     Yanxing Liu*,     Yuqian Fu✉,     Muyuan Ma,</em></h4>
 
@@ -34,11 +34,11 @@
 - [ ] Release LAE-DINO Model -->
 
 ## News
-- [2025/3/31] Our paper of "EarthSynth：Generating Augmented Out-Of-Distribution Earth Observation with Diffusion Models" is up on [arXiv](http://arxiv.org/abs/2408.09110).
+- [2025/3/31] Our paper of "EarthSynth：EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](http://arxiv.org/abs/2408.09110).
 
 ## Abstract
 
-Object detection, particularly open-vocabulary object detection, plays a crucial role in Earth sciences, such as environmental monitoring, natural disaster assessment, and land-use planning. However, existing open-vocabulary detectors, primarily trained on natural-world images, struggle to generalize to remote sensing images due to a significant data domain gap. Thus, this paper aims to advance the development of open-vocabulary object detection in remote sensing community. To achieve this, we first reformulate the task as Locate Anything on Earth (LAE) with the goal of detecting any novel concepts on Earth. We then developed the LAE-Label Engine which collects, auto-annotates, and unifies up to 10 remote sensing datasets creating the LAE-1M - the first large-scale remote sensing object detection dataset with broad category coverage. Using the LAE-1M, we further propose and train the novel LAE-DINO Model, the first open-vocabulary foundation object detector for the LAE task, featuring Dynamic Vocabulary Construction (DVC) and Visual-Guided Text Prompt Learning (VisGT) modules. DVC dynamically constructs vocabulary for each training batch, while VisGT maps visual features to semantic space, enhancing text features. We comprehensively conduct experiments on established remote sensing benchmark DIOR, DOTAv2.0, as well as our newly introduced 80-class LAE-80C benchmark. Results demonstrate the advantages of the LAE-1M dataset and the effectiveness of the LAE-DINO method.
+Remote sensing image interpretation often faces challenges due to the scarcity of labeled data, which limits the performance of deep learning models in visual understanding tasks. We propose EarthSynth, a conditional foundation diffusion model that enables synthesizing multi-category, cross-satellite labeled Earth observations for downstream visual understanding tasks. EarthSynth introduces a logically coherent scene synthesis strategy to enhance data diversity and explore robustness diffusion-based generation. Additionally, we investigate the probabilistic relationships between object foreground and background to improve remote sensing image understanding. Our work encompasses semantic-level scene selection, instance-level constrained scene synthesis, and data annotation generation strategies, offering a practical and scalable solution for advancing remote sensing image analysis through data augmentation and synthetic labeling.
 
 <p align="center">
     <img src="assets/EarthSynth-Fig1.png" alt="Image" width="500">
