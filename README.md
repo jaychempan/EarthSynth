@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="assets/EarthSy.png" alt="Image" width="250">
+    <img src="assets/EarthSy.png" alt="Image" width="100">
 </p>
 <div align="center">
 <h1 align="center"> EarthSynth: Generating Informative Earth Observation with Diffusion Models</h1>
