@@ -1,5 +1,8 @@
+<p align="center">
+    <img src="assets/EarthSy.png" alt="Image" width="250">
+</p>
 <div align="center">
-<h1 align="center"> <img width="50" alt="image" src="./assets/EarthSy.png"> EarthSynth: Generating Informative Earth Observation with Diffusion Models</h1>
+<h1 align="center"> EarthSynth: Generating Informative Earth Observation with Diffusion Models</h1>
 
 <!-- <h4 align="center"><em>Jiancheng Pan*,     Yanxing Liu*,     Yuqian Fu✉,     Muyuan Ma,</em></h4>
 
