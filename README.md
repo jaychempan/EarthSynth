@@ -34,7 +34,7 @@
 - [ ] Release LAE-DINO Model -->
 
 ## News
-- [2025/5/6] Our paper of "EarthSynth：EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](http://arxiv.org/abs/2408.09110).
+- [2025/5/6] Our paper of "EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](http://arxiv.org/abs/2408.09110).
 
 ## Abstract
 
