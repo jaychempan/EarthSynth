@@ -37,12 +37,18 @@
 - [ ] Release LAE-DINO Model -->
 
 ## News
-- [2025/5/6] Our paper of "EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](http://arxiv.org/abs/2408.09110).
+- [2025/5/16] Our paper of "EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](http://arxiv.org/abs/2408.09110).
 
 ## Abstract
 
-Remote sensing image interpretation often faces challenges due to the scarcity of labeled data, which limits the performance of deep learning models in visual understanding tasks. We propose EarthSynth, a conditional foundation diffusion model that enables synthesizing multi-category, cross-satellite labeled Earth observations for downstream visual understanding tasks. EarthSynth introduces a logically coherent scene synthesis strategy to enhance data diversity and explore robustness diffusion-based generation. Additionally, we investigate the probabilistic relationships between object foreground and background to improve remote sensing image understanding. Our work encompasses semantic-level scene selection, instance-level constrained scene synthesis, and data annotation generation strategies, offering a practical and scalable solution for advancing remote sensing image analysis through data augmentation and synthetic labeling.
+Remote sensing image (RSI) interpretation typically faces challenges due to the scarcity of labeled data, which limits the performance of RSI interpretation tasks. To tackle this challenge, we propose EarthSynth, a diffusion-based generative foundation model that enables synthesizing multi-category, cross-satellite labeled Earth observation for downstream RSI interpretation tasks. To the best of our knowledge, EarthSynth is the first to explore multi-task generation for remote sensing. EarthSynth, trained on the EarthSynth-180K dataset, employs the Counterfactual Composition training strategy to improve training data diversity and enhance category control. Furthermore, a rule-based method of R-Filter is proposed to filter more informative synthetic data for downstream tasks. We evaluate our EarthSynth on scene classification, object detection, and semantic segmentation in open-world scenarios, offering a practical solution for advancing RSI interpretation.
 
 <p align="center">
-    <img src="assets/EarthSynth-Fig1.png" alt="Image" width="500">
+    <img src="assets/EarthSynth-FM.png" alt="Image" width="500">
+</p>
+
+## Model
+
+<p align="center">
+    <img src="assets/EarthSynth-Framwork.png" alt="Image" width="500">
 </p>
