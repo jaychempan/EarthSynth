@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="assets/EarthSy.png" alt="Image" width="100">
+    <img src="assets/EarthSy.png" alt="Image" width="120">
 </p>
 <div align="center">
 <h1 align="center"> EarthSynth: Generating Informative Earth Observation with Diffusion Models</h1>
@@ -16,7 +16,7 @@
 </div>
 
 <p align="center">
-    <a href="http://arxiv.org/abs/2408.09110"><img src="https://img.shields.io/badge/Arxiv-2408.09110-b31b1b.svg?logo=arXiv"></a>
+    <a href="https://arxiv.org/abs/2505.12108"><img src="https://img.shields.io/badge/Arxiv-2505.12108-b31b1b.svg?logo=arXiv"></a>
     <!-- <a href="http://arxiv.org/abs/2408.09110"><img src="https://img.shields.io/badge/AAAI'25-Paper-blue"></a> -->
     <a href="https://jianchengpan.space/EarthSynth-website/index.html"><img src="https://img.shields.io/badge/EarthSynth-Project_Page-<color>"></a>
     <a href="https://github.com/jaychempan/EarthSynth/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow"></a>
@@ -37,7 +37,7 @@
 - [ ] Release LAE-DINO Model -->
 
 ## News
-- [2025/5/16] Our paper of "EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](http://arxiv.org/abs/2408.09110).
+- [2025/5/20] Our paper of "EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](https://arxiv.org/abs/2505.12108).
 
 ## Abstract
 
@@ -52,3 +52,21 @@ Remote sensing image (RSI) interpretation typically faces challenges due to the 
 <p align="center">
     <img src="assets/EarthSynth-Framwork.png" alt="Image" width="500">
 </p>
+
+
+
+### Citation
+
+If you are interested in the following work, please cite the following paper.
+
+```
+@misc{pan2025earthsynthgeneratinginformativeearth,
+title={EarthSynth: Generating Informative Earth Observation with Diffusion Models}, 
+author={Jiancheng Pan and Shiye Lei and Yuqian Fu and Jiahao Li and Yanxing Liu and Yuze Sun and Xiao He and Long Peng and Xiaomeng Huang and Bo Zhao},
+year={2025},
+eprint={2505.12108},
+archivePrefix={arXiv},
+primaryClass={cs.CV},
+url={https://arxiv.org/abs/2505.12108}, 
+} 
+```
