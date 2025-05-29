@@ -4,9 +4,9 @@
 <div align="center">
 <h1 align="center"> EarthSynth: Generating Informative Earth Observation with Diffusion Models</h1>
 
-<h4 align="center"><em>Jiancheng Pan*,     Shiye Lei*,     Yuqian Fu✉,    Jiahao Li,</em></h4>
+<h4 align="center"><em>Jiancheng Pan*,     Shiye Lei*,     Yuqian Fu✉,    Jiahao Li,    Yanxing Liu</em></h4>
 
-<h4 align="center"><em>Yanxing Liu,     Xiao He,   Yuze Sun,  Long Peng,   Xiaomeng Huang✉ ,     Bo Zhao </em></h4> 
+<h4 align="center"><em>Xiao He,   Yuze Sun,  Long Peng,   Xiaomeng Huang✉ ,     Bo Zhao✉ </em></h4> 
 <p align="center">
     <img src="assets/inst.png" alt="Image" width="400">
 </p>
@@ -48,6 +48,7 @@ Remote sensing image (RSI) interpretation typically faces challenges due to the 
 </p>
 
 ## Datasets
+EarthSynth-180K is derived from OEM, LoveDA, DeepGlobe, SAMRS, and LAE-1M datasets. It is further enhanced with mask and text prompt conditions, making it suitable for training foundation diffusion-based generative model. The EarthSynth-180K dataset is constructed using the Random Cropping and Category Augmentation strategies.
 
 <p align="center">
     <img src="assets/EarthSynth-180K-Map.png" alt="Image" width="400">
