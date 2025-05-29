@@ -47,7 +47,7 @@ Remote sensing image (RSI) interpretation typically faces challenges due to the 
     <img src="assets/EarthSynth-FM.png" alt="Image" width="500">
 </p>
 
-## Datasets
+## Dataset
 EarthSynth-180K is derived from OEM, LoveDA, DeepGlobe, SAMRS, and LAE-1M datasets. It is further enhanced with mask and text prompt conditions, making it suitable for training foundation diffusion-based generative model. The EarthSynth-180K dataset is constructed using the Random Cropping and Category Augmentation strategies.
 
 <p align="center">
@@ -60,6 +60,7 @@ EarthSynth-180K is derived from OEM, LoveDA, DeepGlobe, SAMRS, and LAE-1M datase
 </p>
 
 ## Model
+EarthSynth is trained with CF-Comp training strategy on real and unrealistic logical mixed data distribution, learns remote sensing pixel-level properties in multiple dimensions, and builds a unified process for conditional diffusion training and synthesis.
 
 <p align="center">
     <img src="assets/EarthSynth-Framwork.png" alt="Image" width="500">
