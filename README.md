@@ -21,7 +21,7 @@
     <a href="https://jianchengpan.space/EarthSynth-website/index.html"><img src="https://img.shields.io/badge/EarthSynth-Project_Page-<color>"></a>
     <a href="https://huggingface.co/jaychempan/EarthSynth"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-HuggingFace-yellow?style=flat&logo=hug"></a>
     <a href="https://huggingface.co/jaychempan/EarthSynth"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-HuggingFace-yellow?style=flat&logo=hug"></a>
-    <a href="https://github.com/jaychempan/EarthSynth/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow"></a>
+    <a href="https://github.com/jaychempan/EarthSynth/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-orange"></a>
 </p>
 
 <p align="center">
