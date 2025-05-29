@@ -4,14 +4,14 @@
 <div align="center">
 <h1 align="center"> EarthSynth: Generating Informative Earth Observation with Diffusion Models</h1>
 
-<!-- <h4 align="center"><em>Jiancheng Pan*,     Yanxing Liu*,     Yuqian Fu✉,     Muyuan Ma,</em></h4>
+<h4 align="center"><em>Jiancheng Pan*,     Shiye Lei*,     Yuqian Fu✉,    Jiahao Li,</em></h4>
 
-<h4 align="center"><em>Jiahao Li,     Danda Pani Paudel,    Luc Van Gool,     Xiaomeng Huang✉ </em></h4> -->
-<!-- <p align="center">
+<h4 align="center"><em>Yanxing Liu,     Xiao He,   Yuze Sun,  Long Peng,   Xiaomeng Huang✉ ,     Bo Zhao </em></h4> 
+<p align="center">
     <img src="assets/inst.png" alt="Image" width="400">
-</p> -->
+</p>
 
-<!-- \* *Equal Contribution* &nbsp; &nbsp; Corresponding Author ✉ -->
+\* *Equal Contribution* &nbsp; &nbsp; Corresponding Author ✉
 
 </div>
 
@@ -45,6 +45,17 @@ Remote sensing image (RSI) interpretation typically faces challenges due to the 
 
 <p align="center">
     <img src="assets/EarthSynth-FM.png" alt="Image" width="500">
+</p>
+
+## Datasets
+
+<p align="center">
+    <img src="assets/EarthSynth-180K-Map.png" alt="Image" width="400">
+</p>
+
+
+<p align="center">
+    <img src="assets/EarthSynth-180K.png" alt="Image" width="400">
 </p>
 
 ## Model
