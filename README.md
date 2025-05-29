@@ -66,7 +66,23 @@ EarthSynth is trained with CF-Comp training strategy on real and unrealistic log
     <img src="assets/EarthSynth-Framwork.png" alt="Image" width="500">
 </p>
 
+### Acknowledgement
 
+This project references and uses the following open source models and datasets.
+
+#### Related Open Source Models
+
+- [Diffusers](https://github.com/huggingface/diffusers)
+- [ControlNet](https://github.com/lllyasviel/ControlNet)
+- [MM-Grounding-DINO](https://github.com/open-mmlab/mmdetection/blob/main/configs/mm_grounding_dino/README.md)
+
+#### Related Open Source Datasets
+
+- [OpenEarthMap](https://open-earth-map.org/overview_oem.html)
+- [LoveDA](https://github.com/Junjue-Wang/LoveDA?tab=readme-ov-file)
+- [DeepGlobe](http://deepglobe.org/)
+- [SAMRS](https://github.com/ViTAE-Transformer/SAMRS)
+- [LAE-1M](https://github.com/jaychempan/LAE-DINO)
 
 ### Citation
 
