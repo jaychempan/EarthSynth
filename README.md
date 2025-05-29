@@ -75,6 +75,8 @@ This project references and uses the following open source models and datasets.
 - [Diffusers](https://github.com/huggingface/diffusers)
 - [ControlNet](https://github.com/lllyasviel/ControlNet)
 - [MM-Grounding-DINO](https://github.com/open-mmlab/mmdetection/blob/main/configs/mm_grounding_dino/README.md)
+- [CLIP](https://github.com/openai/CLIP)
+- [GSNet](https://github.com/yecy749/GSNet)
 
 #### Related Open Source Datasets
 
