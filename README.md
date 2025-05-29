@@ -19,6 +19,8 @@
     <a href="https://arxiv.org/abs/2505.12108"><img src="https://img.shields.io/badge/Arxiv-2505.12108-b31b1b.svg?logo=arXiv"></a>
     <!-- <a href="http://arxiv.org/abs/2408.09110"><img src="https://img.shields.io/badge/AAAI'25-Paper-blue"></a> -->
     <a href="https://jianchengpan.space/EarthSynth-website/index.html"><img src="https://img.shields.io/badge/EarthSynth-Project_Page-<color>"></a>
+    <a href="https://huggingface.co/jaychempan/EarthSynth"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-HuggingFace-yellow?style=flat&logo=hug"></a>
+    <a href="https://huggingface.co/jaychempan/EarthSynth"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-HuggingFace-yellow?style=flat&logo=hug"></a>
     <a href="https://github.com/jaychempan/EarthSynth/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow"></a>
 </p>
 
