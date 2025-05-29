@@ -32,11 +32,10 @@
   <a href="#statement">Statement</a>
 </p>
 
-<!-- ## TODO
+## TODO
 
-- [X] Release LAE-Label Engine
-- [X] Release LAE-1M Dataset
-- [ ] Release LAE-DINO Model -->
+- [ ] Release EarthSynth Models to 🤗 HuggingFace
+- [ ] Release EarthSynth-180K Dataset to 🤗 HuggingFace
 
 ## News
 - [2025/5/20] Our paper of "EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](https://arxiv.org/abs/2505.12108).
