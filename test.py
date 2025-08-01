@@ -4,7 +4,7 @@ from diffusers import StableDiffusionControlNetPipeline, ControlNetModel, UniPCM
 from diffusers.utils import load_image
 import torch
 
-def generate_images(base_model_path, controlnet_path, control_image_dir):
+def generate_images(base_model_path, controlnet_path, control_image_dir, output_dir, category_txt_path, num_images):
     # Load model
     controlnet = ControlNetModel.from_pretrained(controlnet_path, torch_dtype=torch.float16)
     pipe = StableDiffusionControlNetPipeline.from_pretrained(
