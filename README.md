@@ -67,6 +67,7 @@ EarthSynth is trained with CF-Comp training strategy on real and unrealistic log
     <img src="assets/EarthSynth-Framwork.png" alt="Image" width="500">
 </p>
 
+
 ### Acknowledgement
 
 This project references and uses the following open source models and datasets.
