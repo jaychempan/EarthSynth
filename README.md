@@ -73,10 +73,11 @@ The experimental environment is based on [`diffusers==0.30.3`](https://huggingfa
 ```
 conda create -n earthsy python=3.8 -y
 conda activate earthsy
+pip install -r requirements.txt
 git clone https://github.com/jaychempan/EarthSynth.git
 cd diffusers
 pip install -e ".[torch]"
-pip install matplotlib opencv-python transformers
+
 ```
 ### Acknowledgement
 
