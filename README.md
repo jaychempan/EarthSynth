@@ -68,6 +68,16 @@ EarthSynth is trained with CF-Comp training strategy on real and unrealistic log
 </p>
 
 
+### Environment Setup
+The experimental environment is based on [`diffusers==0.30.3`](https://huggingface.co/docs/diffusers/v0.30.3/en/installation), the installation environment reference mmdetection's installation guide. You can refer to my environment `requirements.txt` if you encounter problems.
+```
+conda create -n earthsy python=3.8 -y
+conda activate earthsy
+git clone https://github.com/jaychempan/EarthSynth.git
+cd diffusers
+pip install -e ".[torch]"
+pip install matplotlib opencv-python transformers
+```
 ### Acknowledgement
 
 This project references and uses the following open source models and datasets.
