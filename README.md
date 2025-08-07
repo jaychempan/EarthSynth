@@ -62,7 +62,7 @@ EarthSynth-180K is derived from OEM, LoveDA, DeepGlobe, SAMRS, and LAE-1M datase
 </p>
 
 ### Data Preparation 
-We use category augmentation on each image to help the model better understand each category and allow more control over specific categories when generating images. This also helps improve how samples are combined in the batch-based CF-Comp strategy. If you want to train a remote sensing foundation generative model of your own this step is not necessary. Here is the use of the category-augmentation method.
+We use category augmentation on each image to help the model better understand each category and allow more control over specific categories when generating images. This also helps improve the combination of samples in the batch-based CF-Comp strategy. If you want to train a remote sensing foundation generative model of your own, this step is not necessary. Here is the use of the category-augmentation method.
 
 - Merge the split zip files and extract them
 ```
@@ -93,7 +93,7 @@ After running, the directory will look like this:
 
 ## Model
 ### Environment Setup
-The experimental environment is based on [`diffusers==0.30.3`](https://huggingface.co/docs/diffusers/v0.30.3/en/installation), the installation environment reference mmdetection's installation guide. You can refer to my environment `requirements.txt` if you encounter problems.
+The experimental environment is based on [`diffusers==0.30.3`](https://huggingface.co/docs/diffusers/v0.30.3/en/installation), and the installation environment references mmdetection's installation guide. You can refer to my environment `requirements.txt` if you encounter problems.
 ```
 conda create -n earthsy python=3.8 -y
 conda activate earthsy
@@ -134,7 +134,7 @@ pipe = pipe.to("cuda:0")
 # generate image
 generator = torch.manual_seed(10345340)
 image = pipe(
-    "A satellite image of storage tank",
+    "A satellite image of a storage tank",
     generator=generator,
     image=img,
 ).images[0]
@@ -142,7 +142,7 @@ image = pipe(
 image.save("generated_storage_tank.png")
 
 ```
-or you can inference locally:
+Or you can infer locally:
 ```
 python test.py --base_model path/to/stable-diffusion/ --controlnet_path path/to/earthsynth [--control_image_dir] [--output_dir] [--output_dir] [--category_txt_path] [--num_images]
 ```
@@ -152,7 +152,7 @@ python test.py --base_model path/to/stable-diffusion/ --controlnet_path path/to/
 
 ### Acknowledgement
 
-This project references and uses the following open source models and datasets.
+This project references and uses the following open-source models and datasets.
 
 #### Related Open Source Models
 
