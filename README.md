@@ -61,6 +61,38 @@ EarthSynth-180K is derived from OEM, LoveDA, DeepGlobe, SAMRS, and LAE-1M datase
     <img src="assets/EarthSynth-180K.png" alt="Image" width="400">
 </p>
 
+### Data Preparation 
+We use category augmentation on each image to help the model better understand each category and allow more control over specific categories when generating images. This also helps improve how samples are combined in the batch-based CF-Comp strategy. If you want to train a remote sensing foundation generative model of your own this step is not necessary. Here is the use of the category-augmentation method.
+
+
+
+- Merge the split zip files and extract them
+```
+cat train.zip_part_* > train.zip
+unzip train.zip
+```
+- Store the dataset in the following directory structure: `./data/EarthSynth-180K`
+```
+.(./data/EarthSynth-180K)
+└── train
+    ├── images
+    └── masks
+```
+- Run the category augmentation script:
+```
+python category-augmentation.py
+```
+After running, the directory will look like this:
+```
+..(./data/EarthSynth-180K)
+└── train
+    ├── category_images  # Augmented single-category images
+    ├── category_masks   # Augmented single-category masks
+    ├── images
+    ├── masks
+    └── train.jsonl      # JSONL file for training
+```
+
 ## Model
 ### Environment Setup
 The experimental environment is based on [`diffusers==0.30.3`](https://huggingface.co/docs/diffusers/v0.30.3/en/installation), the installation environment reference mmdetection's installation guide. You can refer to my environment `requirements.txt` if you encounter problems.
@@ -131,7 +163,7 @@ This project references and uses the following open source models and datasets.
 
 ### Citation
 
-If you are interested in the following work, please cite the following paper.
+If you are interested in the following work or want to use our dataset, please cite the following paper.
 
 ```
 @misc{pan2025earthsynthgeneratinginformativeearth,
