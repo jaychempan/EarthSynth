@@ -106,7 +106,7 @@ pip install -e ".[torch]"
 EarthSynth is trained with CF-Comp training strategy on real and unrealistic logical mixed data distribution, learns remote sensing pixel-level properties in multiple dimensions, and builds a unified process for conditional diffusion training and synthesis.
 
 <p align="center">
-    <img src="assets/EarthSynth-Framwork.png" alt="Image" width="500">
+    <img src="assets/EarthSynth-Framwork.png" alt="Image" width="700">
 </p>
 
 ### Train EarthSynth
