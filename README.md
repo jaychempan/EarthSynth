@@ -64,8 +64,6 @@ EarthSynth-180K is derived from OEM, LoveDA, DeepGlobe, SAMRS, and LAE-1M datase
 ### Data Preparation 
 We use category augmentation on each image to help the model better understand each category and allow more control over specific categories when generating images. This also helps improve how samples are combined in the batch-based CF-Comp strategy. If you want to train a remote sensing foundation generative model of your own this step is not necessary. Here is the use of the category-augmentation method.
 
-
-
 - Merge the split zip files and extract them
 ```
 cat train.zip_part_* > train.zip
@@ -111,6 +109,14 @@ EarthSynth is trained with CF-Comp training strategy on real and unrealistic log
     <img src="assets/EarthSynth-Framwork.png" alt="Image" width="500">
 </p>
 
+### Train EarthSynth
+This project is based on diffusers' ControlNet base structure, and the community is open for easy use and promotion. By modifying the config file of `train.sh` of the catalog `./diffusers/train/`.
+
+```
+cd diffusers/
+bash train/train.sh
+```
+
 ### Inference
 Example inference using 🤗 HuggingFace pipeline:
 ```python
@@ -140,6 +146,9 @@ or you can inference locally:
 ```
 python test.py --base_model path/to/stable-diffusion/ --controlnet_path path/to/earthsynth [--control_image_dir] [--output_dir] [--output_dir] [--category_txt_path] [--num_images]
 ```
+### Training Data Generation
+
+[TODO]
 
 ### Acknowledgement
 
