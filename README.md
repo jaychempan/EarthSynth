@@ -35,14 +35,15 @@
 ## TODO
 
 - [ ] Release EarthSynth Models to 🤗 HuggingFace
-- [ ] Release EarthSynth-180K Dataset to 🤗 HuggingFace
+- [x] Release EarthSynth-180K Dataset to 🤗 HuggingFace
 
 ## News
+- [2025/8/7] EarthSynth-180K dataset is uploaded to 🤗 [HuggingFace](jaychempan/EarthSynth-180K).
 - [2025/5/20] Our paper of "EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](https://arxiv.org/abs/2505.12108).
 
 ## Abstract
 
-Remote sensing image (RSI) interpretation typically faces challenges due to the scarcity of labeled data, which limits the performance of RSI interpretation tasks. To tackle this challenge, we propose EarthSynth, a diffusion-based generative foundation model that enables synthesizing multi-category, cross-satellite labeled Earth observation for downstream RSI interpretation tasks. To the best of our knowledge, EarthSynth is the first to explore multi-task generation for remote sensing. EarthSynth, trained on the EarthSynth-180K dataset, employs the Counterfactual Composition training strategy to improve training data diversity and enhance category control. Furthermore, a rule-based method of R-Filter is proposed to filter more informative synthetic data for downstream tasks. We evaluate our EarthSynth on scene classification, object detection, and semantic segmentation in open-world scenarios, offering a practical solution for advancing RSI interpretation.
+Remote sensing image (RSI) interpretation typically faces challenges due to the scarcity of labeled data, which limits the performance of RSI interpretation tasks. To tackle this challenge, we propose \textbf{EarthSynth}, a diffusion-based generative foundation model that enables synthesizing multi-category, cross-satellite labeled Earth observation for downstream RSI interpretation tasks. To the best of our knowledge, EarthSynth is the \textit{first to explore multi-task generation for remote sensing}, tackling the challenge of limited generalization in task-oriented synthesis for RSI interpretation. EarthSynth, trained on the EarthSynth-180K dataset, employs the Counterfactual Composition training strategy with a three-dimensional batch-sample selection mechanism to improve training data diversity and enhance category control. Furthermore, a rule-based method of R-Filter is proposed to filter more informative synthetic data for downstream tasks. We evaluate our EarthSynth on scene classification, object detection, and semantic segmentation in open-world scenarios. There are significant improvements in open-vocabulary understanding tasks, offering a practical solution for advancing RSI interpretation.
 
 <p align="center">
     <img src="assets/EarthSynth-FM.png" alt="Image" width="500">
@@ -61,13 +62,6 @@ EarthSynth-180K is derived from OEM, LoveDA, DeepGlobe, SAMRS, and LAE-1M datase
 </p>
 
 ## Model
-EarthSynth is trained with CF-Comp training strategy on real and unrealistic logical mixed data distribution, learns remote sensing pixel-level properties in multiple dimensions, and builds a unified process for conditional diffusion training and synthesis.
-
-<p align="center">
-    <img src="assets/EarthSynth-Framwork.png" alt="Image" width="500">
-</p>
-
-
 ### Environment Setup
 The experimental environment is based on [`diffusers==0.30.3`](https://huggingface.co/docs/diffusers/v0.30.3/en/installation), the installation environment reference mmdetection's installation guide. You can refer to my environment `requirements.txt` if you encounter problems.
 ```
@@ -77,8 +71,44 @@ pip install -r requirements.txt
 git clone https://github.com/jaychempan/EarthSynth.git
 cd diffusers
 pip install -e ".[torch]"
+```
+### EarthSynth with CF-Comp
+EarthSynth is trained with CF-Comp training strategy on real and unrealistic logical mixed data distribution, learns remote sensing pixel-level properties in multiple dimensions, and builds a unified process for conditional diffusion training and synthesis.
+
+<p align="center">
+    <img src="assets/EarthSynth-Framwork.png" alt="Image" width="500">
+</p>
+
+### Inference
+Example inference using 🤗 HuggingFace pipeline:
+```python
+from diffusers import StableDiffusionControlNetPipeline, ControlNetModel
+import torch
+from PIL import Image
+
+img = Image.open("./demo/control/mask.png")
+
+controlnet = ControlNetModel.from_pretrained("jaychempan/EarthSynth")
+
+pipe = StableDiffusionControlNetPipeline.from_pretrained("stable-diffusion-v1-5/stable-diffusion-v1-5", controlnet=controlnet)
+pipe = pipe.to("cuda:0")
+
+# generate image
+generator = torch.manual_seed(10345340)
+image = pipe(
+    "A satellite image of storage tank",
+    generator=generator,
+    image=img,
+).images[0]
+
+image.save("generated_storage_tank.png")
 
 ```
+or you can inference locally:
+```
+python test.py --base_model path/to/stable-diffusion/ --controlnet_path path/to/earthsynth [--control_image_dir] [--output_dir] [--output_dir] [--category_txt_path] [--num_images]
+```
+
 ### Acknowledgement
 
 This project references and uses the following open source models and datasets.
