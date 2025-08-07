@@ -1,6 +1,7 @@
 weights/
 train_data/
 data/
+diffusers/work_dirs
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

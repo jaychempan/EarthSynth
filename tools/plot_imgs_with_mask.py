@@ -139,6 +139,8 @@ def visualize_and_save(image_path, mask_path, output_dir="vis_out"):
 
 
 image_path = "path/to/image"  # 替换成你的图像路径
-mask_path = "path/to/mask"  # 替换成你的 mask 路径
+mask_path = "/path/to/mask"  # 替换成你的 mask 路径
+
+
 
 visualize_and_save(image_path, mask_path)
