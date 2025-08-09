@@ -2,6 +2,8 @@ weights/
 train_data/
 data/
 diffusers/work_dirs
+diffusers/wandb
+diffusers/core
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
