@@ -150,6 +150,11 @@ python test.py --base_model path/to/stable-diffusion/ --controlnet_path path/to/
 
 [TODO]
 
+<p align="center">
+    <img src="assets/Vis.png" alt="Image" width="500">
+</p>
+
+
 ### Acknowledgement
 
 This project references and uses the following open-source models and datasets.
