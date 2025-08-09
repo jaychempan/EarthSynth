@@ -8,3 +8,4 @@ datasets
 wandb
 matplotlib
 opencv-python
+xformers
