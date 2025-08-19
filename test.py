@@ -45,7 +45,7 @@ def main():
     parser.add_argument('--base_model_path', type=str, required=True, help='Path to the base model.')
     parser.add_argument('--controlnet_path', type=str, required=True, help='Path to the controlnet model.')
     parser.add_argument('--control_image_dir', type=str, default="./demo/control", help='Directory of control images.')
-    parser.add_argument('--output_dir', type=str, default="./demo", help='Directory to save the generated images.')
+    parser.add_argument('--output_dir', type=str, default="./demo/output", help='Directory to save the generated images.')
     parser.add_argument('--category_txt_path', type=str, default="./demo/class.txt", help='Path to the category txt file.')
     parser.add_argument('--num_images', type=int, default=1, help='Number of images to generate per category.')
     
