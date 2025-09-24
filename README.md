@@ -32,6 +32,49 @@
   <a href="#statement">Statement</a>
 </p>
 
+
+
+<p align="center">
+<p>A satellite image of <span style="color:inherit;">road</span>.</p>
+  <img src="./assets/gifs/DG_629683_0_road_1.gif" width="18%">
+  <img src="./assets/gifs/DG_629683_0_road_2.gif" width="18%">
+  <img src="./assets/gifs/DG_629683_0_road_3.gif" width="18%">
+  <img src="./assets/gifs/DG_629683_0_road_4.gif" width="18%">
+  <img src="./assets/gifs/DG_629683_0_road_5.gif" width="18%">
+</p>
+<p align="center">
+<p>A satellite image of <span style="color:inherit;">small vehicle</span>. (Flood)</p>
+  <img src="./assets/gifs/FAST_train_5093_0001_0_small_vehicle_1.gif" width="18%">
+  <img src="./assets/gifs/FAST_train_5093_0001_0_small_vehicle_2.gif" width="18%">
+  <img src="./assets/gifs/FAST_train_5093_0001_0_small_vehicle_3.gif" width="18%">
+  <img src="./assets/gifs/FAST_train_5093_0001_0_small_vehicle_4.gif" width="18%">
+  <img src="./assets/gifs/FAST_train_5093_0001_0_small_vehicle_5.gif" width="18%">
+</p>
+<p align="center">
+<p>A satellite image of <span style="color:inherit;">tree</span>.</p>
+  <img src="./assets/gifs/OEMxBD_coxsbazar_56_2_tree_1.gif" width="18%">
+  <img src="./assets/gifs/OEMxBD_coxsbazar_56_2_tree_2.gif" width="18%">
+  <img src="./assets/gifs/OEMxBD_coxsbazar_56_2_tree_3.gif" width="18%">
+  <img src="./assets/gifs/OEMxBD_coxsbazar_56_2_tree_4.gif" width="18%">
+  <img src="./assets/gifs/OEMxBD_coxsbazar_56_2_tree_5.gif" width="18%">
+</p>
+<p align="center">
+<p>A satellite image of <span style="color:inherit;">water</span>.</p>
+  <img src="./assets/gifs/LD_300_0_water_1.gif" width="18%">
+  <img src="./assets/gifs/LD_300_0_water_2.gif" width="18%">
+  <img src="./assets/gifs/LD_300_0_water_3.gif" width="18%">
+  <img src="./assets/gifs/LD_300_0_water_4.gif" width="18%">
+  <img src="./assets/gifs/LD_300_0_water_5.gif" width="18%">
+</p>
+<p align="center">
+<p>A satellite image of <span style="color:inherit;">baseball diamond, vehicle</span>.</p>
+  <img src="./assets/gifs/SIOR_07349_0_1.gif" width="18%">
+  <img src="./assets/gifs/SIOR_07349_0_2.gif" width="18%">
+  <img src="./assets/gifs/SIOR_07349_0_3.gif" width="18%">
+  <img src="./assets/gifs/SIOR_07349_0_4.gif" width="18%">
+  <img src="./assets/gifs/SIOR_07349_0_5.gif" width="18%">
+</p>
+
 ## TODO
 
 - [ ] Release EarthSynth Models to 🤗 HuggingFace
@@ -40,6 +83,7 @@
 ## News
 - [2025/8/7] EarthSynth-180K dataset is uploaded to 🤗 [HuggingFace](jaychempan/EarthSynth-180K).
 - [2025/5/20] Our paper of "EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](https://arxiv.org/abs/2505.12108).
+
 
 ## Abstract
 
