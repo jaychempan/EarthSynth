@@ -17,7 +17,6 @@
 
 <p align="center">
     <a href="https://arxiv.org/abs/2505.12108"><img src="https://img.shields.io/badge/Arxiv-2505.12108-b31b1b.svg?logo=arXiv"></a>
-    <!-- <a href="http://arxiv.org/abs/2408.09110"><img src="https://img.shields.io/badge/AAAI'25-Paper-blue"></a> -->
     <a href="https://jianchengpan.space/EarthSynth-website/index.html"><img src="https://img.shields.io/badge/EarthSynth-Project_Page-<color>"></a>
     <a href="https://huggingface.co/datasets/jaychempan/EarthSynth-180K"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-HuggingFace-yellow?style=flat&logo=hug"></a>
     <a href="https://huggingface.co/jaychempan/EarthSynth"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-HuggingFace-yellow?style=flat&logo=hug"></a>
@@ -77,10 +76,12 @@
 
 ## TODO
 
-- [ ] Release EarthSynth Models to 🤗 HuggingFace
+- [ ] Release EarthSynth Training Code
+- [x] Release EarthSynth Models to 🤗 HuggingFace
 - [x] Release EarthSynth-180K Dataset to 🤗 HuggingFace
 
 ## News
+- [2025/10/30] EarthSynth Models is uploaded to 🤗 [HuggingFace](https://huggingface.co/jaychempan/EarthSynth).
 - [2025/8/7] EarthSynth-180K dataset is uploaded to 🤗 [HuggingFace](https://huggingface.co/datasets/jaychempan/EarthSynth-180K).
 - [2025/5/20] Our paper of "EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](https://arxiv.org/abs/2505.12108).
 
@@ -189,6 +190,10 @@ image.save("generated_storage_tank.png")
 Or you can infer locally:
 ```
 python test.py --base_model path/to/stable-diffusion/ --controlnet_path path/to/earthsynth [--control_image_dir] [--output_dir] [--output_dir] [--category_txt_path] [--num_images]
+
+e.g.
+
+python test.py --base_model ./weights/stable-diffusion-v1-5/ --controlnet_path ./weights/EarthSynth/controlnet --num_images 5 --control_image_dir ./demo/control/ --category_txt_path ./demo/class.txt --output_dir ./outputs
 ```
 ### Training Data Generation
 
