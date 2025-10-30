@@ -1,1 +1,4 @@
 storage tank
+storage tank, ship
+storage tank, forest land
+storage tank, urban land
