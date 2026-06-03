@@ -81,6 +81,7 @@
 - [x] Release EarthSynth-180K Dataset to 🤗 HuggingFace
 
 ## News
+- [2026/6/3] Thanks to ModelScope's computing support, EarthSynth has been deployed on [ModelScope Studio](https://www.modelscope.cn/studios/ML4Sustain/EarthSynth).
 - [2025/10/30] EarthSynth Models is uploaded to 🤗 [HuggingFace](https://huggingface.co/jaychempan/EarthSynth).
 - [2025/8/7] EarthSynth-180K dataset is uploaded to 🤗 [HuggingFace](https://huggingface.co/datasets/jaychempan/EarthSynth-180K).
 - [2025/5/20] Our paper of "EarthSynth: Generating Informative Earth Observation with Diffusion Models" is up on [arXiv](https://arxiv.org/abs/2505.12108).
